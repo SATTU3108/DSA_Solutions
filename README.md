@@ -8,14 +8,14 @@ The repository is organized into folders that correspond to different topics wit
 
 ##  Contributions and Feedback
 
-While this repository primarily reflects my personal work, I’m open to feedback and suggestions! If you have alternative solutions, insights, or improvements to any of the problems, feel free to reach out.
+While this repository primarily reflects my personal work, I’m open to feedback and suggestions! If you have alternative solutions, insights, or improvements to any of the problems, feel free to open a pull request.
 
 ##  About Me
 
 I’m Satvik Desai, a student in the Department of Electrical Engineering at the Indian Institute of Technology (IIT) Indore. I’m passionate about coding and continuously strive to enhance my problem-solving skills through practice and exploration.
 
 ### Connect with Me:
-- GitHub: [Your GitHub Profile](https://github.com/SATTU3108)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/satvik-desai-b77a2524b/)
+- GitHub: [Github](https://github.com/SATTU3108)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/satvik-desai-b77a2524b/)
 
 ---
