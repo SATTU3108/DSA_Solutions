@@ -1,6 +1,6 @@
 # My DSA Problem Solutions
 
-Welcome to my DSA repository! Here, I have showcased a collection of Data Structures and Algorithms (DSA) problems that I've tackled and solved. This repository serves as a personal record of my coding journey and a resource for anyone looking to explore DSA concepts.
+Welcome to my DSA repository! Here, I have made a collection of Data Structures and Algorithms (DSA) problems that I've tackled and solved. This repository serves as a personal record of my coding journey and a resource for anyone looking to explore DSA concepts.
 
 ##  Repository Structure
 
