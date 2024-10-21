@@ -45,3 +45,6 @@ int height(Node *root) {
     if (abs(left_height-right_height)>1) return -1;
     return 1+max(left_height,right_height);
 }
+bool isBalanced(Node *root) {
+    return (height(root)!=-1);
+}

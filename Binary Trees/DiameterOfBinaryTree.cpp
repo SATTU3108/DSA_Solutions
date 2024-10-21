@@ -1,5 +1,3 @@
-//Find the maximum dimater, i.e. maximum distance between any two nodes of the tree
-
 #include <bits/stdc++.h>
 using namespace std;
 
