@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Given a Directed Acyclic Graph having V vertices and E edges, your task is to find any Topological Sorted order of the graph.
+
+Topological Sorted order: It is a linear ordering of vertices such that for every directed edge u -> v, where vertex u comes before v in the ordering.
+*/
+
+// Kahn's Algorithm -> BFS Approach
 vector<int> topoSort(vector<vector<int>> &adj) {
     int V=adj.size();
     vector<int> indegree(V,0);
@@ -21,7 +28,6 @@ vector<int> topoSort(vector<vector<int>> &adj) {
             if (indegree[it]==0) q.push(it);
         }
     }
-    return topo;
+    if (topo.size()!=V) return {-1}; // directed graph contains a cycle and it is not a DAG
+    else return topo;
 }
-//time:O(N*len)+O(K+E)
-//space:O(L)
