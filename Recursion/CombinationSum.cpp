@@ -6,23 +6,22 @@ COMBINATION SUM I
 Given an array of distinct integers candidates and a target integer target, return all unique combinations of candidates where the chosen numbers sum to target. You may reuse the same number an unlimited number of times.
 */
 
-void findCombinations1(vector<int> &candidates,int target,int ind,int sum, vector<int> &curr,vector<vector<int>> &res) {
-    int n=candidates.size();
-    if (sum==target) {
-        res.push_back(curr);
+void helper(vector<int> &candidates,int target,int ind,vector<int> &curr,vector<vector<int>> &ans) {
+    if (target==0) {
+        ans.push_back(curr);
         return;
     }
-    if (sum>target || ind==n) return;
+    if (target<0 || ind==candidates.size()) return;
     curr.push_back(candidates[ind]);
-    findCombinations1(candidates,target,ind,sum+candidates[ind],curr,res);
+    helper(candidates,target-candidates[ind],ind,curr,ans);
     curr.pop_back();
-    findCombinations1(candidates,target,ind+1,sum,curr,res);
+    helper(candidates,target,ind+1,curr,ans);
 }
-vector<vector<int>> combinationSum(vector<int> &candidates,int target) {
-    vector<vector<int>> res;
+vector<vector<int>> combinationSum(vector<int> &candidates,int target) {        
     vector<int> curr;
-    findCombinations1(candidates,target,0,0,curr,res);
-    return res;
+    vector<vector<int>> ans;
+    helper(candidates,target,0,curr,ans);
+    return ans;
 }
 
 /*
